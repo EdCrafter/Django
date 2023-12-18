@@ -33,4 +33,4 @@ class BlogDeleteView(DeleteView): # Создание нового класса
 @login_required
 def c_logout(request):
     logout(request)
-    return redirect("products_list")
+    return redirect("home")
