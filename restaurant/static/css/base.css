@@ -33,6 +33,7 @@ header div{
   align-items: center;
   color: #f4ff7f;
   font-size: x-large;
+  text-shadow: 1px -1px 9px black;
 }
 header div>a{
   display: flex;
@@ -44,9 +45,10 @@ header div>a{
   margin-right: auto;
 }
 .login_button>a{
-  font-size: 60px !important;
-  color: #d9ff00  !important;
+  font-size: 30px !important;
+  color: #ff6f00 !important;
 }
+
 .nav-right {
   display: flex;
   padding-top: 2rem;
@@ -74,3 +76,49 @@ header div>a{
 .post-entry h2 a:hover {
   color: red;
 }
+
+.login>div{
+  color: #abff00;
+  text-align: center;
+  font-size: 40px;
+}
+.login form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #80c4ffd6;
+  }
+  
+.login body{
+    background-color: yellow !important;
+    background-image: none !important;
+  }
+  
+.login form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login form button:hover,
+  .login form button:active {
+    background-color: #555;
+    color: white;
+  }
+  
+  .login form p a {
+    color: #333;
+  }
+  
+  .login form p a:hover,
+  .login form p a:active {
+    color: #555;
+  }

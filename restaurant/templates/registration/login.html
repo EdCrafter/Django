@@ -1,9 +1,14 @@
+{% extends 'base.html' %}
 
-{% extends 'base.html' %} &nbsp;{% block content %}
-<h2>Log In</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
-</form>
-{% endblock content %}
+{% block content %}
+    <div class="login">
+        <div>Вхід</div>
+        <form method="post" action="{% url 'login' %}" >
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Увійти</button>
+            <p>Не маєте облікового запису? <a href="#">Зареєструватися.</a></p>
+        </form>
+    </div>
+    
+{% endblock %}

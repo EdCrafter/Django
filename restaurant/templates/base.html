@@ -18,6 +18,10 @@
       </div>
       <div><a href="{% url 'logout' %}">Вийти</a></li></div>
     {% else %}
+        <div><p>Вітаю гість!</p></div>
+        <div>
+          <h1><a href="{% url 'home' %}">Смачнісімо</a></h1>
+        </div>
         <div class="login_button"><a href="{% url 'login' %}">Увійти</a></div>
     {% endif %}
     </header>
