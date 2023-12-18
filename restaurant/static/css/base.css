@@ -1,0 +1,76 @@
+body {
+background-image: url('../img/bg.jpg');
+background-attachment: fixed;
+background-size: cover; 
+}
+  
+header h1 a {
+  color: red;
+}
+
+/* static/css/base.css */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+header {
+  border-bottom: 1px solid #999;
+    margin-bottom: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #4ff7f145;
+}
+
+header h1 a {
+  color: #f700ff;
+    text-decoration: none;
+    font-size: xxx-large;
+}
+header div{
+  display: flex;
+  align-items: center;
+  color: #f4ff7f;
+  font-size: x-large;
+}
+header div>a{
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: x-large;
+}
+.nav-left {
+  margin-right: auto;
+}
+.login_button>a{
+  font-size: 60px !important;
+  color: #d9ff00  !important;
+}
+.nav-right {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.post-entry {
+  margin-bottom: 2rem;
+}
+
+.post-entry h2 {
+  margin: 0.5rem 0;
+}
+
+.post-entry h2 a,
+.post-entry h2 a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+.post-entry p {
+  margin: 0;
+  font-weight: 400;
+}
+
+.post-entry h2 a:hover {
+  color: red;
+}
