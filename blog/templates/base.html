@@ -19,7 +19,6 @@
       </div>
     </header>
     {% if user.is_authenticated %}
-<<<<<<< HEAD
         <p>Hi {{ user.username }}!</p>
         <a href="{% url 'logout' %}">Вийти ({{ user }})</a></li>
     {% else %}
@@ -29,15 +28,5 @@
       {% block content %}
       {% endblock content %}
     </div>
-=======
-    <p>Hi {{ user.username }}!</p>
-    <p><a href="{% url 'logout' %}">Log out</a></p>
-
-    {% else %}
-    <p>You are not logged in.</p>
-    <a href="{% url 'login' %}">Log In</a>
-    {% endif %}
-    {% block content %} {% endblock content %}
->>>>>>> e6773e8ad4adff6f00de6fa0b26767a18abb548f
   </body>
 </html>
