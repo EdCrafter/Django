@@ -2,9 +2,12 @@
 {% load static %}
 <html>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+      rel="stylesheet"
+    />
     <title>Django blog</title>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -16,6 +19,7 @@
       </div>
     </header>
     {% if user.is_authenticated %}
+<<<<<<< HEAD
         <p>Hi {{ user.username }}!</p>
         <a href="{% url 'logout' %}">Вийти ({{ user }})</a></li>
     {% else %}
@@ -25,5 +29,15 @@
       {% block content %}
       {% endblock content %}
     </div>
+=======
+    <p>Hi {{ user.username }}!</p>
+    <p><a href="{% url 'logout' %}">Log out</a></p>
+
+    {% else %}
+    <p>You are not logged in.</p>
+    <a href="{% url 'login' %}">Log In</a>
+    {% endif %}
+    {% block content %} {% endblock content %}
+>>>>>>> e6773e8ad4adff6f00de6fa0b26767a18abb548f
   </body>
 </html>
