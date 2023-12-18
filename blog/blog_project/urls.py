@@ -4,6 +4,6 @@ from django.urls import path, include # новое изменение
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')), # новое изменение
     path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('blog.urls')), # новое изменение
 ]
