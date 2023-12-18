@@ -30,7 +30,7 @@ class BlogDeleteView(DeleteView): # Создание нового класса
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
 
-@login_required
+#@login_required
 def c_logout(request):
     logout(request)
     return redirect("home")
