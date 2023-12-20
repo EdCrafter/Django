@@ -6,8 +6,10 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
       rel="stylesheet"
     />
-    <title>Django blog</title>
-    <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+    <title>Django myneBlog</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    {% block static %}{% endblock %}
   </head>
   <body>
     <header>

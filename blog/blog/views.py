@@ -1,4 +1,4 @@
-# blog/views.py
+# myneBlog/views.py
 from django.views.generic import ListView, DetailView 
 from .models import Post
 from django.views.generic.edit import CreateView, UpdateView,DeleteView
@@ -8,24 +8,24 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 
-class BlogListView(ListView):
+class myneBlogListView(ListView):
     model = Post
     template_name = 'home.html'
 
-class BlogDetailView(DetailView): # новое
+class myneBlogDetailView(DetailView): # новое
     model = Post
     template_name = 'post_detail.html'
 
 
-class BlogCreateView(CreateView): # новое изменение
+class myneBlogCreateView(CreateView): # новое изменение
     model = Post
     template_name = 'post_new.html'
     fields = ['title', 'author', 'body']
-class BlogUpdateView(UpdateView): # Новый класс
+class myneBlogUpdateView(UpdateView): # Новый класс
     model = Post
     template_name = 'post_edit.html'
     fields = ['title', 'body']
-class BlogDeleteView(DeleteView): # Создание нового класса
+class myneBlogDeleteView(DeleteView): # Создание нового класса
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')

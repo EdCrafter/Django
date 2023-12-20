@@ -1,4 +1,4 @@
-# blog/tests.py
+# myneBlog/tests.py
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
@@ -6,7 +6,7 @@ from django.urls import reverse
 from .models import Post
 
 
-class BlogTests(TestCase):
+class myneBlogTests(TestCase):
 
     def setUp(self):
         self.user = get_user_model().objects.create_user(
