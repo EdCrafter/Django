@@ -18,7 +18,7 @@ urlpatterns = [
     path("signup/", c_register, name="signup"),
     path("signup/", c_register, name="signup"),
     path("logout/", c_logout, name="logout"),
-    path("login/", c_login, name="login"),
+    path("login/", c_login, name="registration/login"),
     path('post/<int:pk>/delete/', 
     myneBlogDeleteView.as_view(), name='post_delete'),
     path('post/new/', myneBlogCreateView.as_view(), name='post_new'),
